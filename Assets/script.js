@@ -38,20 +38,44 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function myFunction() {
-  var checkBox1 = document.getElementById("orange");
-  var text1 = document.getElementById("text1");
+  var checkBox1 = document.getElementById("uppercase");
+  
   if (checkBox1.checked == true){
     text1.style.display = "block";
   } else {
      text1.style.display = "none";
   }
   
-  var checkBox2 = document.getElementById("apple");
-  var text2 = document.getElementById("text2");
+  var checkBox2 = document.getElementById("lowercase");
+  
   if (checkBox2.checked == true){
     text2.style.display = "block";
   } else {
      text2.style.display = "none";
   }
   
+  var checkBox3 = document.getElementById("numeric");
+  
+  if (checkBox2.checked == true){
+    text2.style.display = "block";
+  } else {
+     text2.style.display = "none";
+  }
+
+  var checkBox4 = document.getElementById("specialchars");
+  
+  if (checkBox2.checked == true){
+    text2.style.display = "block";
+  } else {
+     text2.style.display = "none";
+  }
+}
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("length");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
 }

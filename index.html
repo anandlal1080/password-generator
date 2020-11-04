@@ -24,17 +24,29 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+        <div class="slidecontainer">
+          <p>Select desired password length</p>
+          <input
+            type="range"
+            min="8"
+            max="128"
+            value="12"
+            class="slider"
+            id="myRange"
+          />
+          <p>Password Length: <span id="length"></span></p>
+        </div>
 
         <p>
           Displaying text when a checkbox is checked and the submit button is
           clicked:
         </p>
-        <input type="checkbox" id="orange" value="Orange" /> Uppercase<br />
-        <input type="checkbox" id="apple" value="Apple" checked />
+        <input type="checkbox" id="uppercase" checked /> Uppercase<br />
+        <input type="checkbox" id="lowercase" checked />
         Lowercase<br />
-        <input type="checkbox" id="orange" value="Orange" /> Numeric<br />
-        <input type="checkbox" id="apple" value="Apple" checked /> Special
-        Chars<br />
+        <input type="checkbox" id="numeric" checked /> Numeric<br />
+        <input type="checkbox" id="specialchars" checked />
+        Special Chars<br />
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
