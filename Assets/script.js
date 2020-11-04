@@ -22,19 +22,19 @@ function generatePassword()
   let charsForPassword = "";
   let password = "";
   var checkBox1 = document.getElementById("uppercase");
-  if (checkBox1.checked == true){
+  if (checkBox1.checked){
     charsForPassword += valuesUppercase
   }
   var checkBox2 = document.getElementById("lowercase");
-  if (checkBox2.checked == true){
+  if (checkBox2.checked){
     charsForPassword += valuesLowercase
   }
   var checkBox3 = document.getElementById("numeric");
-  if (checkBox3.checked == true){
+  if (checkBox3.checked){
     charsForPassword += valuesNumeric
   }
   var checkBox4 = document.getElementById("specialchars");
-  if (checkBox4.checked == true){
+  if (checkBox4.checked){
     charsForPassword += valuesSpecial
   }
   
