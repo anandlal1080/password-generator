@@ -56,7 +56,7 @@ function myFunction() {
   
   var checkBox3 = document.getElementById("numeric");
   
-  if (checkBox2.checked == true){
+  if (checkBox3.checked == true){
     text2.style.display = "block";
   } else {
      text2.style.display = "none";
@@ -64,7 +64,7 @@ function myFunction() {
 
   var checkBox4 = document.getElementById("specialchars");
   
-  if (checkBox2.checked == true){
+  if (checkBox4.checked == true){
     text2.style.display = "block";
   } else {
      text2.style.display = "none";
