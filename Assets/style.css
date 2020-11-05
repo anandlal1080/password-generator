@@ -136,7 +136,7 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
-
+/* Slider customization section*/
 .slidecontainer {
   width: 100%;
 }
@@ -161,13 +161,13 @@ button[disabled] {
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #4caf50;
+  background: green;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #4caf50;
+  background: green;
   cursor: pointer;
 }

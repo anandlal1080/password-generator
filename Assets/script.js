@@ -2,6 +2,7 @@ var slider = document.getElementById("myRange");
 var output = document.getElementById("sliderlength");
 output.innerHTML = slider.value;
 
+//set password length/complexity
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
@@ -10,7 +11,6 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword()
 {
   
-  //set password length/complexity
   
   
   //possible password values
