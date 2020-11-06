@@ -21,18 +21,22 @@ function generatePassword()
   var passwordLength = document.getElementById("myRange").value
   let charsForPassword = "";
   let password = "";
+  //UPPER Case checkbox
   var checkBox1 = document.getElementById("uppercase");
   if (checkBox1.checked){
     charsForPassword += valuesUppercase
   }
+  //lower case checkbox
   var checkBox2 = document.getElementById("lowercase");
   if (checkBox2.checked){
     charsForPassword += valuesLowercase
   }
+//numeric checkbox
   var checkBox3 = document.getElementById("numeric");
   if (checkBox3.checked){
     charsForPassword += valuesNumeric
   }
+  //special chars checkbox
   var checkBox4 = document.getElementById("specialchars");
   if (checkBox4.checked){
     charsForPassword += valuesSpecial
